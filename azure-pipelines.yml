@@ -1,8 +1,7 @@
 # Starter pipeline
 - task: CmdLine@2
   inputs:
-    script: 'python User_Interface.py'
-    workingDirectory: 'main'
+    script: 'https://github.com/DeepaS123/Azurepipeline/blob/main/User_Interface.py'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -12,10 +11,6 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-
-steps:
-- script: User_Interface.py
-  displayName: 'run mp4 video'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
